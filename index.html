@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Bunk360: Fuel Station Manager</title>
+<meta name="description" content="Privacy Policy for Bunk360: Fuel Station Manager, an offline-first Android app for fuel station owners and managers.">
+<link rel="canonical" href="https://bunk360-privacypolicy.gunasai.in/">
+<style>
+  :root {
+    --bg: #f5f7f6;
+    --surface: #ffffff;
+    --ink: #17231f;
+    --muted: #55645e;
+    --line: #dbe3df;
+    --accent: #0c6a4d;
+    --accent-soft: #e3f1eb;
+    --note-bg: #fff6df;
+    --note-line: #e2b94a;
+    --focus: #0c6a4d;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1613;
+      --surface: #16201c;
+      --ink: #e6efea;
+      --muted: #9fb0a8;
+      --line: #28362f;
+      --accent: #5fd0a3;
+      --accent-soft: #1b2e26;
+      --note-bg: #2a2412;
+      --note-line: #8a6d1c;
+      --focus: #5fd0a3;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header .inner {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 2rem;
+  }
+  .app-name {
+    margin: 0 0 .5rem;
+    font-family: var(--sans);
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  h1 {
+    margin: 0 0 1rem;
+    font-family: var(--sans);
+    font-size: clamp(1.9rem, 4.5vw, 2.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  .dates {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .92rem;
+    color: var(--muted);
+  }
+  .dates strong { color: var(--ink); font-weight: 600; }
+
+  .layout {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 60rem) {
+    .layout { grid-template-columns: 15rem minmax(0, 1fr); gap: 3rem; }
+  }
+
+  nav.toc {
+    font-family: var(--sans);
+    font-size: .92rem;
+  }
+  nav.toc h2 {
+    margin: 0 0 .75rem;
+    font-size: .95rem;
+    font-weight: 700;
+  }
+  nav.toc ol { margin: 0; padding: 0; list-style: none; }
+  nav.toc li { margin: 0; }
+  nav.toc a {
+    display: block;
+    padding: .3rem .6rem;
+    border-left: 2px solid var(--line);
+    color: var(--muted);
+    text-decoration: none;
+  }
+  nav.toc a:hover { color: var(--accent); border-left-color: var(--accent); background: var(--accent-soft); }
+  @media (min-width: 60rem) {
+    nav.toc { position: sticky; top: 1.5rem; align-self: start; max-height: calc(100vh - 3rem); overflow-y: auto; }
+  }
+  @media (max-width: 59.99rem) {
+    nav.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 1rem; }
+    nav.toc ol { columns: 2; column-gap: 1rem; }
+    nav.toc li { break-inside: avoid; }
+  }
+  @media (max-width: 34rem) { nav.toc ol { columns: 1; } }
+
+  main {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: clamp(1.25rem, 4vw, 3rem);
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+  main section + section { margin-top: 2.75rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  main h2 {
+    margin: 0 0 1rem;
+    font-family: var(--sans);
+    font-size: 1.45rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+  main h3 {
+    margin: 1.75rem 0 .5rem;
+    font-family: var(--sans);
+    font-size: 1.1rem;
+  }
+  main p { margin: 0 0 1rem; max-width: 70ch; }
+  main ul { margin: 0 0 1.25rem; padding-left: 1.4rem; max-width: 70ch; }
+  main li { margin-bottom: .5rem; }
+  main li::marker { color: var(--accent); }
+
+  .highlight {
+    margin: 1.25rem 0;
+    padding: 1rem 1.15rem;
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    max-width: 70ch;
+  }
+  .highlight p:last-child { margin-bottom: 0; }
+
+  .contact {
+    margin: 1.25rem 0;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-family: var(--sans);
+    font-size: .98rem;
+    max-width: 70ch;
+  }
+  .contact dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1.25rem; }
+  .contact dt { font-weight: 600; }
+  .contact dd { margin: 0; }
+  @media (max-width: 34rem) {
+    .contact dl { grid-template-columns: 1fr; gap: .1rem; }
+    .contact dd { margin-bottom: .6rem; }
+  }
+  .placeholder {
+    background: var(--note-bg);
+    border-bottom: 2px dashed var(--note-line);
+    padding: 0 .25rem;
+  }
+
+  .end-mark {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: .9rem;
+    color: var(--muted);
+  }
+
+  footer {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 3rem;
+    font-family: var(--sans);
+    font-size: .85rem;
+    color: var(--muted);
+  }
+
+  .lang-bar {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem .75rem;
+    font-family: var(--sans);
+    font-size: .92rem;
+  }
+  .lang-bar label { font-weight: 600; }
+  .lang-bar select {
+    font: inherit;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: .45rem .7rem;
+    min-width: 12rem;
+    max-width: 100%;
+  }
+  .lang-bar select:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .lang-note { flex-basis: 100%; margin: 0; color: var(--muted); font-size: .85rem; max-width: 70ch; }
+
+  /* Hide Google Translate's own banner and widget chrome */
+  #google_translate_element { display: none; }
+  body { top: 0 !important; }
+  .skiptranslate iframe, iframe.goog-te-banner-frame { display: none !important; }
+  .goog-tooltip, .goog-tooltip:hover { display: none !important; }
+  .goog-text-highlight { background: none !important; box-shadow: none !important; }
+
+  @media print {
+    .lang-bar { display: none; }
+    body { background: #fff; color: #000; font-size: 11pt; }
+    nav.toc, footer { display: none; }
+    .site-header { border: 0; }
+    main { border: 0; padding: 0; }
+    .layout { display: block; padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <p class="app-name notranslate" translate="no">Bunk360: Fuel Station Manager</p>
+    <h1>Privacy Policy</h1>
+    <p class="dates"><strong>Effective date:</strong> 20 October 2026 &nbsp;&middot;&nbsp; <strong>Last updated:</strong> 20 October 2026</p>
+    <div class="lang-bar notranslate" translate="no">
+      <label for="lang-select">Language / भाषा</label>
+      <select id="lang-select">
+        <option value="en" selected>English</option>
+        <option value="hi">हिन्दी (Hindi)</option>
+        <option value="bn">বাংলা (Bengali)</option>
+        <option value="te">తెలుగు (Telugu)</option>
+        <option value="mr">मराठी (Marathi)</option>
+        <option value="ta">தமிழ் (Tamil)</option>
+        <option value="gu">ગુજરાતી (Gujarati)</option>
+        <option value="ur">اردو (Urdu)</option>
+        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+        <option value="or">ଓଡ଼ିଆ (Odia)</option>
+        <option value="ml">മലയാളം (Malayalam)</option>
+        <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+        <option value="as">অসমীয়া (Assamese)</option>
+        <option value="mai">मैथिली (Maithili)</option>
+        <option value="gom">कोंकणी (Konkani)</option>
+        <option value="sd">سنڌي (Sindhi)</option>
+        <option value="ne">नेपाली (Nepali)</option>
+        <option value="sa">संस्कृतम् (Sanskrit)</option>
+        <option value="doi">डोगरी (Dogri)</option>
+        <option value="bho">भोजपुरी (Bhojpuri)</option>
+        <option value="mni-Mtei">ꯃꯤꯇꯩꯂꯣꯟ (Meitei / Manipuri)</option>
+        <option value="lus">Mizo</option>
+      </select>
+      <p class="lang-note">Translations are automatic (Google Translate) and may contain errors. The English text is the authoritative version.</p>
+    </div>
+    <div id="google_translate_element"></div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#introduction">1. Introduction</a></li>
+      <li><a href="#information-we-handle">2. Information we handle</a></li>
+      <li><a href="#how-information-is-used">3. How information is used</a></li>
+      <li><a href="#third-party-services">4. Internet and third parties</a></li>
+      <li><a href="#sharing-disclosure">5. Sharing and disclosure</a></li>
+      <li><a href="#storage-security">6. Storage and security</a></li>
+      <li><a href="#retention-deletion">7. Retention and deletion</a></li>
+      <li><a href="#children">8. Children’s privacy</a></li>
+      <li><a href="#your-responsibilities">9. Your responsibilities and choices</a></li>
+      <li><a href="#changes">10. Changes to this policy</a></li>
+      <li><a href="#contact">11. Contact</a></li>
+      <li><a href="#disclaimer">12. Independent application</a></li>
+    </ol>
+  </nav>
+
+  <main id="content">
+
+    <section id="introduction">
+      <h2>1. Introduction</h2>
+      <p>Bunk360: Fuel Station Manager (“Bunk360”, “the App”, “we”, “our”, or “us”) is a mobile application designed to help petrol pump owners, fuel station managers, and business operators maintain sales registers, meter readings, shift settlements, fuel density records, tank inventory, customer credit ledgers, expenses, compliance records, and business reports.</p>
+      <p>Bunk360 is designed with an offline-first approach. Its core business records are maintained locally on your device, allowing the principal management features to work without a continuous internet connection.</p>
+      <p>This Privacy Policy explains how information is handled when you use Bunk360, including information entered into the App, local storage, device licensing, backup and restore, report exports, and optional sharing features.</p>
+      <p>By using Bunk360, you acknowledge that you have had the opportunity to read this Privacy Policy.</p>
+    </section>
+
+    <section id="information-we-handle">
+      <h2>2. Information we handle</h2>
+
+      <h3>2.1 Business and operational records</h3>
+      <p>Depending on the features you use, you may enter and store information such as:</p>
+      <ul>
+        <li>Fuel sales, opening and closing meter readings, nozzle readings, and testing quantities.</li>
+        <li>Fuel density, temperature, tank dip measurements, inventory, and tanker receipt records.</li>
+        <li>Shift manager and attendant details, shift settlements, and payment reconciliation.</li>
+        <li>Customer names, vehicle registration numbers, odometer readings, credit transactions, and outstanding balances.</li>
+        <li>Lubricant inventory, purchase and sales records, operating expenses, and business reports.</li>
+        <li>Station details, inspection records, license information, expiry dates, and operational notes.</li>
+      </ul>
+      <p>These records may contain personal or commercially sensitive information about you, your employees, customers, suppliers, or business.</p>
+      <div class="highlight">
+        <p><strong>Local storage:</strong> Core business records are intended to be stored in the App’s local SQLite database on your device. We do not operate a Bunk360 cloud database for synchronizing these core business records under the current offline-first design.</p>
+      </div>
+      <p>Information entered into the App remains your responsibility. Please enter only information you are authorized to maintain.</p>
+
+      <h3>2.2 Device and licensing information</h3>
+      <p>Bunk360 includes a digital license verification mechanism intended to validate the application’s license and device eligibility.</p>
+      <p>Depending on the licensing implementation and the license information supplied, the App may process a device-bound identifier, license identifier, license validity information, and cryptographic signature data.</p>
+      <p>These values are used for license verification and enforcement of the applicable license conditions. They should not be assumed to be anonymous merely because they are used for licensing.</p>
+      <p>The App’s license verification is designed to support offline operation. Any future online activation, license synchronization, or remote validation functionality will be subject to an updated disclosure where required.</p>
+
+      <h3>2.3 Technical and diagnostic information</h3>
+      <p>The App may process technical information required for normal operation, such as database errors, file validation results, application state, and device compatibility information.</p>
+      <p>We do not intentionally collect business records for advertising or sell customer information. Any information transmitted by the App or its third-party libraries, if applicable, must be assessed according to the actual implementation and disclosed in the relevant Google Play Data safety declaration.</p>
+    </section>
+
+    <section id="how-information-is-used">
+      <h2>3. How information is used</h2>
+      <p>Information maintained by Bunk360 is used to provide the features you request, including:</p>
+      <ul>
+        <li>Calculating daily sales and reconciling meter readings.</li>
+        <li>Managing shifts, cash collections, payment records, and credit balances.</li>
+        <li>Recording fuel density, temperature, stock, and tanker deliveries.</li>
+        <li>Tracking lubricant inventory, expenses, and customer transactions.</li>
+        <li>Producing business reports, receipts, PDFs, spreadsheets, and backup files.</li>
+        <li>Managing local license verification and application functionality.</li>
+        <li>Supporting backup restoration, database integrity checks, and recovery.</li>
+        <li>Troubleshooting application errors and maintaining reliable operation where necessary.</li>
+      </ul>
+      <p>Bunk360 does not need a continuous internet connection for its principal local record-management functions.</p>
+    </section>
+
+    <section id="third-party-services">
+      <h2>4. Internet connectivity and third-party services</h2>
+      <p>The App may request internet access for specific supporting functionality, depending on the installed version and configuration.</p>
+      <p>For example, an optional translation synchronization feature, if enabled, may communicate with an external service. Information submitted to that service may be processed under the service provider’s own privacy policy.</p>
+      <p>Bunk360 also supports user-initiated sharing of receipts and files through Android sharing functionality and compatible applications such as WhatsApp.</p>
+      <p>When you choose to share a receipt, report, or file:</p>
+      <ul>
+        <li>You control whether to initiate the sharing action.</li>
+        <li>The selected recipient or application may receive the information contained in the shared item.</li>
+        <li>The recipient’s application or service may process that information under its own privacy policy.</li>
+        <li>We do not control the recipient’s subsequent use, retention, or redistribution of the information.</li>
+      </ul>
+      <p>We do not sell personal or business information to third parties.</p>
+      <p>This web page offers optional machine translation through Google Translate. The translation service loads only after you choose a language other than English. When it does, Google receives the text of this page and technical information such as your IP address, and handles it under Google’s own privacy policy. The Bunk360 app itself is not involved, and no business records are sent.</p>
+      <p>We do not claim that every component of the App is entirely free from network communication. The handling of any data transmitted by third-party libraries, optional services, or future application versions must be reflected accurately in the applicable disclosures.</p>
+    </section>
+
+    <section id="sharing-disclosure">
+      <h2>5. Data sharing and disclosure</h2>
+      <p>Bunk360 does not operate a central cloud database for the core business records maintained by the current offline-first application.</p>
+      <p>We do not intentionally share locally stored business records with us or other third parties for advertising or commercial data brokerage.</p>
+      <p>Information may leave your device when you explicitly export, print, or share a record, or when an enabled supporting feature communicates with an external service.</p>
+      <p>Information may also be disclosed where required by applicable law or a valid legal process.</p>
+      <p>If the application’s data practices change, this Privacy Policy and the applicable Google Play disclosures will be updated as necessary.</p>
+    </section>
+
+    <section id="storage-security">
+      <h2>6. Data storage and security</h2>
+      <p>Bunk360 uses local database storage to maintain business records and includes validation and recovery functionality intended to protect database integrity.</p>
+      <p>The application also uses cryptographic license verification and may use Android secure-storage facilities for appropriate security-related values.</p>
+      <p>We take reasonable steps through the application’s design to reduce the risk of accidental data corruption, unauthorized access, and improper handling. However:</p>
+      <ul>
+        <li>Local storage is not a guarantee of database encryption.</li>
+        <li>A digital license signature does not itself encrypt business records.</li>
+        <li>Device security, Android permissions, backups, malware, physical access, and third-party applications may affect the confidentiality of information.</li>
+        <li>We cannot guarantee that any device or software system is completely secure.</li>
+      </ul>
+      <p>You should protect your device with an appropriate screen lock, keep Android and the App updated, and store exported backups securely.</p>
+      <p>Unless specifically verified in the installed version, this policy does not claim that the complete SQLite database or every exported backup is encrypted.</p>
+    </section>
+
+    <section id="retention-deletion">
+      <h2>7. Data retention and deletion</h2>
+
+      <h3>7.1 Local business records</h3>
+      <p>Business records are retained on your device until you delete them through the App, clear the App’s data, uninstall the App, or otherwise remove the relevant files.</p>
+      <p>Uninstalling the App or clearing its data may permanently remove records that have not been backed up.</p>
+
+      <h3>7.2 Backups and exports</h3>
+      <p>You may create database backups and export reports or receipts using supported features.</p>
+      <p>Files saved to your Downloads folder, another storage location, Google Drive, WhatsApp, email, or another destination are subject to the retention and deletion practices of that destination.</p>
+      <p>Deleting information from Bunk360 does not automatically delete copies that you previously exported or shared.</p>
+      <p>You are responsible for securely deleting exported files and backups that you no longer need.</p>
+
+      <h3>7.3 License information</h3>
+      <p>License records and associated device-bound information may remain available locally while needed for license verification and application operation. Their retention depends on the license implementation and the state of the installed App.</p>
+
+      <h3>7.4 Data deletion requests</h3>
+      <p>The current offline-first design does not provide a central Bunk360 account or cloud database for the core business records described in this policy.</p>
+      <p>You can remove locally stored records through the available application controls, where provided, or by clearing the App’s storage or uninstalling it. These actions may permanently delete records and should only be performed after creating a backup if you need to retain them.</p>
+      <p>If you have a privacy enquiry or believe that information has been transmitted to a service associated with Bunk360, contact us using the details in <a href="#contact">Section 11</a>.</p>
+      <p>Any information retained by a third-party service must be handled through that service’s applicable deletion process.</p>
+    </section>
+
+    <section id="children">
+      <h2>8. Children’s privacy</h2>
+      <p>Bunk360 is intended for business owners, fuel station operators, managers, and other professional users. It is not designed or marketed specifically for children.</p>
+      <p>We do not knowingly seek to collect children’s personal information. If you believe that a child has provided personal information through a service associated with Bunk360, please contact us so that the matter can be reviewed.</p>
+    </section>
+
+    <section id="your-responsibilities">
+      <h2>9. Your responsibilities and choices</h2>
+      <p>You are responsible for ensuring that you have the necessary authority to enter and maintain employee, customer, supplier, and vehicle information.</p>
+      <p>You can choose whether to use optional sharing and export features. Before sharing a report or receipt, review its contents to ensure that it does not reveal confidential business information to an unintended recipient.</p>
+      <p>You should maintain secure backups of important business records and verify that a backup can be restored before relying on it as your only recovery copy.</p>
+      <p>Where applicable privacy laws grant you rights to access, correct, delete, or otherwise exercise control over personal information, you may contact us to raise a request. The process and available remedies depend on the information involved, the applicable law, and whether the information is held locally or by a third-party service.</p>
+    </section>
+
+    <section id="changes">
+      <h2>10. Changes to this Privacy Policy</h2>
+      <p>We may update this Privacy Policy to reflect changes to Bunk360’s features, technical implementation, legal requirements, or data practices.</p>
+      <p>The latest version will be published at <a href="https://bunk360-privacypolicy.gunasai.in">https://bunk360-privacypolicy.gunasai.in</a>.</p>
+      <p>The effective date at the beginning of the document will be updated when a material revision is published. We encourage users to review this page periodically.</p>
+    </section>
+
+    <section id="contact">
+      <h2>11. Contact and privacy enquiries</h2>
+      <p>For questions, privacy concerns, or requests concerning information associated with Bunk360, contact:</p>
+      <div class="contact">
+        <dl>
+          <dt>Application</dt>
+          <dd>Bunk360: Fuel Station Manager</dd>
+          <dt>Developer</dt>
+          <dd>Guna Sai Venkata Reddy</dd>
+          <dt>Email</dt>
+          <dd class="notranslate" translate="no"><a href="mailto:gunasai200@gmail.com">gunasai200@gmail.com</a></dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="disclaimer">
+      <h2>12. Independent application disclaimer</h2>
+      <p>Bunk360 is an independent fuel station management application. Unless explicitly authorized, it is not affiliated with, sponsored by, or endorsed by Indian Oil Corporation Limited (IOCL), Bharat Petroleum Corporation Limited (BPCL), Hindustan Petroleum Corporation Limited (HPCL), or any other oil marketing company.</p>
+    </section>
+
+    <p class="end-mark">End of Privacy Policy</p>
+  </main>
+
+</div>
+
+<footer>
+  &copy; 2026 Bunk360. This page is publicly accessible and does not require login.
+</footer>
+
+<script>
+(function () {
+  var LANGS = 'hi,bn,te,mr,ta,gu,ur,kn,or,ml,pa,as,mai,gom,sd,ne,sa,doi,bho,mni-Mtei,lus';
+  var sel = document.getElementById('lang-select');
+  if (!sel) return;
+
+  function readCookie() {
+    var m = document.cookie.match(/(?:^|;\s*)googtrans=\/en\/([^;]+)/);
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+  function writeCookie(code) {
+    document.cookie = 'googtrans=/en/' + code + '; path=/; max-age=31536000; SameSite=Lax';
+  }
+  function clearCookie() {
+    var past = '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+    document.cookie = 'googtrans' + past;
+    var parts = location.hostname.split('.');
+    for (var i = 0; i < parts.length - 1; i++) {
+      document.cookie = 'googtrans' + past + '; domain=.' + parts.slice(i).join('.');
+    }
+  }
+
+  window.googleTranslateElementInit = function () {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: LANGS, autoDisplay: false },
+      'google_translate_element'
+    );
+  };
+  function loadGoogle() {
+    var s = document.createElement('script');
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    s.async = true;
+    document.body.appendChild(s);
+  }
+
+  // Google's script is requested only if the visitor has chosen a language.
+  var current = readCookie();
+  if (current) { sel.value = current; loadGoogle(); }
+
+  sel.addEventListener('change', function () {
+    if (sel.value === 'en') { clearCookie(); } else { writeCookie(sel.value); }
+    location.reload();
+  });
+})();
+</script>
+
+</body>
+</html>
